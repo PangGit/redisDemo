@@ -1,0 +1,20 @@
+server:
+  port: 8080
+spring:
+  application:
+    name: redisDemo
+  datasource:
+    name: mysql
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://127.0.0.1:3307/redisDemo?useUnicode=true&characterEncoding=utf-8&serverTimezone=GMT%2B8&tinyInt1isBit=false
+    username: root
+    password: 123456
+  redis:
+    host: 127.0.0.1
+    port: 6379
+    database: 0
+  #热部署生效
+  devtools:
+    restart:
+      enabled: true
+      additional-paths: src/main/java
