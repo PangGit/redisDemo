@@ -1,7 +1,8 @@
 package com.redis.demo.controller;
 
-import com.redis.demo.mapper.T1;
+import com.redis.demo.entity.T1;
 import com.redis.demo.mapper.T1Mapper;
+import com.redis.demo.service.MyThread;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;

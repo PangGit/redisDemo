@@ -1,6 +1,6 @@
-package com.redis.demo.controller;
+package com.redis.demo.service;
 
-import com.redis.demo.mapper.T1;
+import com.redis.demo.entity.T1;
 import com.redis.demo.mapper.T1Mapper;
 
 /**
