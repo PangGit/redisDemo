@@ -5,7 +5,7 @@ import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.data.redis.core.RedisTemplate;
 
 @SpringBootTest
-class DemoApplicationTests {
+class ApplicationTests {
 
     @Test
     void contextLoads() {
