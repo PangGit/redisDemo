@@ -2,7 +2,7 @@ package com.redis.demo;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
-import org.springframework.data.redis.core.RedisTemplate;
+import org.springframework.util.StopWatch;
 
 @SpringBootTest
 class ApplicationTests {
@@ -14,9 +14,16 @@ class ApplicationTests {
 
     @Test
     void redisPut() {
+        StopWatch sw = new StopWatch("test");
+        sw.start();
 
+        long count = 0L;
+        for (int i = 0; i < 1000_000_000; i++) {
+            count += i;
+        }
+        System.out.println("count :" + count);
 
-
+        sw.stop();
     }
 
     @Test
